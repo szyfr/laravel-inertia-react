@@ -82,18 +82,18 @@
         "lint": [
             "rector",
             "pint --parallel",
-            "bun run lint"
+            "bunx run lint"
         ],
         "test:type-coverage": "pest --type-coverage --min=100",
         "test:lint": [
             "pint --parallel --test",
             "rector --dry-run",
-            "bun run test:lint"
+            "bunx run test:lint"
         ],
         "test:unit": "pest --parallel --coverage --exactly=100.0",
         "test:types": [
             "phpstan",
-            "bun run test:types"
+            "bunx run test:types"
         ],
         "test": [
             "@test:type-coverage",
